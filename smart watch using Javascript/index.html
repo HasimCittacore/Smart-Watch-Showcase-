@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartWatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style2.css">
+</head>
+<body onload="timer()">
+
+    <header>
+        <img src="images/flipkart logo.png" alt="flipkart" class="logo">
+        <p class="sale">Have a discount offer at this great season!!!!!...</p>
+    </header>
+
+    <section id="article">
+
+        <div id="avatar">
+
+            <img src="https://www.gadgets4geeks.com.au/WebRoot/Store/Shops/gadgets4geeks/Products/S-AW-2094B/03-rubber-sport-band-with-pin-tuck-closure-for-apple-watch-42mm-black_ml.jpg" alt="watch" id="myimage">
+        
+            <p id="time"></p>
+
+            <img src="images/heartbeat.png" alt="heartimage" id="heart">
+            <span id="heart-rate">75 bpm</span>
+        </div>
+        <div id="info">
+            <h1 class="title">SmartWatch</h1>
+            <p class="description">
+                  SmartWatch shows the time and monitors the heart beat rate.
+            </p>
+
+            <h3 class="section">Select the color</h3>
+ 
+             <ul class="colors">
+               
+               <li class="grey" onclick="grey()"></li>
+               <li class="dark-blue" onclick="darkblue()"></li>
+               <li class="pink" onclick="pink()"></li>
+               <li class="red" onclick="red()"></li>
+               
+             </ul>
+
+             <h3 class="section">Features</h3>
+
+             <ul class="options">
+                 <li><a onclick="timer()">Time</a></li>
+                 <li><a onclick="heartbeat()">Heart Rate</a></li>
+             </ul>
+
+             <button class="buy">
+                 Buy Now
+             </button>
+        </div>
+    </section>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>

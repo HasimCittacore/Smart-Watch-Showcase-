@@ -1,0 +1,179 @@
+header{
+    background-color: #042f66;
+    width:100%;
+    height:140px;
+    padding:15px;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .logo
+{
+    display:flex;
+    align-self: center;
+    justify-content: center;
+    height:100px;
+    margin:40px 50px;
+    cursor:pointer;
+    padding:20px
+}
+header .sale{
+    text-align:right;
+    margin-left: 400px;
+    color:whitesmoke;
+    font-size: larger;
+    font-family: 'Rubik Glitch', cursive;
+}
+#article
+{
+    
+    width: 1000px;
+    height:auto;
+    margin:50px auto;
+}
+
+#article #avatar
+{
+    
+    position: relative;
+    width:28%;
+    height:400px;
+    float:left;
+}
+
+#article #avatar #myimage{
+    position:absolute;
+    top:10%;
+    transform:translateX(-10%);
+    width:128%;
+    height:100%;
+    z-index: -1;
+}
+
+#article #avatar p{
+    position:absolute;
+    top: 220px;
+    left: 78px;
+    letter-spacing: 4px;
+    font-weight:600;
+    text-align: center;
+    color:white;
+}
+
+#article #avatar #heart
+{
+    position:absolute;
+    top:50%;
+    left:43%;
+    width:50px;
+    height:50px;
+    animation: beat 5s linear 0s infinite alternate;
+    visibility: hidden;
+}
+
+@keyframes beat {
+    0% {transform:scale(1);}
+    25% {transform:scale(1.25);}
+    50% {transform:scale(1.5);}
+    75% {transform:scale(1.25);}
+    100% {transform:scale(1);}
+}
+
+#article #avatar #heart-rate
+{
+    position:absolute;
+    top:65%;
+    left:42.5%;
+    width:50px;
+    height:50px;
+    color:#abb8da;
+    font-weight:600;
+    text-align:center;
+    visibility: hidden;
+}
+
+#article #info
+{
+    width:70%;
+    height:400px;
+    float:right;
+    padding:10px;
+}
+
+#article #info .title
+{
+    font-size:30px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#article #info .description
+{
+    font-size:12px;
+    line-height:1.5;
+    margin-bottom:35px;
+    word-break:normal;
+    width:80%;
+}
+
+#article #info .section{
+    margin-bottom: 20px;
+}
+
+#article #info .colors{
+    margin-bottom: 40px;
+}
+
+#article #info .colors li{
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: inline;
+    margin: 5px 15px 0 0;
+    cursor: pointer;
+}
+
+
+#article #info .colors li.grey{
+    background-color: #cfcfcf;
+}
+
+#article #info .colors li.dark-blue{
+    background-color:#343458;
+}
+
+#article #info .colors li.pink{
+    
+    background-color:rgb(245, 116, 135)
+}
+
+#article #info .colors li.red{
+    background-color:#ca3d22;
+}
+
+#article #info .options{
+    margin-bottom: 35px;
+}
+
+#article #info .options li{
+    border-radius: 5px;
+    display: inline;
+    margin: 5px 15px 0 0;
+    cursor: pointer;
+}
+
+#article #info .options li a{
+    text-decoration: none;
+    color: #000;
+    background-color:#cfcfcf;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 5px 18px;
+}
+
+#article .buy{
+    background-color: orange;
+    border: 1px solid orange;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
